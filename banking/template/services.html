@@ -1,0 +1,76 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container-fluid p-2">
+   
+   
+    <div class="row ">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-2">
+    
+        <div class="card" style="width: 18rem;">
+            <center>
+            <img class="card-img-top p-4" src="{% static 'img/rent.png' %}" width="160px" height="160px" alt="Card image cap" >
+            <div class="card-body">
+              <h5 class="card-title"><b> Pay Rent</b></h5>
+             <br>
+              <a href="{% url 'bankapp:home' %}" class="btn btn-primary">Rent</a>
+            </div>
+        </center>
+          </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-2">
+          <div class="card" style="width: 18rem;">
+            <center>
+            <img class="card-img-top p-4" src="{% static 'img/online-shopping.png' %}" width="160px" height="160px" alt="Card image cap" >
+            <div class="card-body">
+              <h5 class="card-title"><b>Shopping</b></h5>
+             <br>
+              <a href="{% url 'bankapp:home' %}" class="btn btn-primary">Online shopping</a>
+            </div>
+        
+        
+        </center>
+    </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-2">
+          <div class="card" style="width: 18rem;">
+            <center>
+            <img class="card-img-top p-4" src="{% static 'img/electricity.png' %}" width="160px" height="160px" alt="Card image cap" >
+            <div class="card-body">
+              <h5 class="card-title"><b>Electricity Bill</b></h5>
+             <br>
+              <a href="{% url 'bankapp:home' %}" class="btn btn-primary">Electricity</a>
+            </div>
+        </center>
+          </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-2">
+          <div class="card" style="width: 18rem;">
+            <center>
+            <img class="card-img-top p-4" src="{% static 'img/mobile.png' %}" width="160px" height="160px" alt="Card image cap" >
+            <div class="card-body">
+              <h5 class="card-title"><b>Mobile Recharge</b></h5>
+              <br>
+              <a href="{% url 'bankapp:home' %}" class="btn btn-primary">Recharge</a>
+            </div>
+        </center>
+          </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-3 p-2">
+            <div class="card" style="width: 18rem;">
+              <center>
+              <img class="card-img-top p-4" src="{% static 'img/capital.png' %}" width="160px" height="160px" alt="Card image cap" >
+              <div class="card-body">
+                <h5 class="card-title"><b>Loan Repyment</b></h5>
+                <br>
+                <a href="{% url 'bankapp:home' %}" class="btn btn-primary">Loan</a>
+              </div>
+          </center>
+            </div>
+            </div>
+
+        </div>
+        </div>
+    </div>
+{% endblock %}

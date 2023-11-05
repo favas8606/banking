@@ -1,0 +1,149 @@
+
+
+{% load static %}
+
+<div class="container-fluid" id="addbank" style="padding-top: 80px;">
+    <div class="row ">
+        <div class="col-9 col-sm-12 col-md-6 col-lg-6 p-2 content_center">
+            <center>
+                <div class="on-light back">
+                 
+                <img src="{% static 'img/registration.png' %}" width="270px" height="270px" alt="" class="border-gradient border-gradient-purple on-light"  class="gradient-box">
+           
+           </div> </center>
+        </div>
+        
+       
+      
+ 
+        
+        <div class="col-9 col-sm-12 col-md-6 col-lg-6 p-2">
+            <div class="card" style="width: 18rem;">
+                <center>
+                    <img class="card-img-top p-4" src="{% static 'img/add.png' %}" width="270px" height="150px" alt="Card image cap">
+                    <div class="card-body">
+                        
+                           
+                       
+                        {% if user.is_authenticated %}
+                            <h5 class="card-title"><b>Bank Details</b></h5>
+                            <p class="card-text"><strong>Add Your bank details for getting services from cloud</strong></p>
+                            <a href="{% url 'bankapp:registration_form' %}" class="btn btn-primary">Add Bank</a>
+                            {% else %}
+                            <h5 class="card-title"><b>Bank Details</b></h5>
+                            <p class="card-text"><strong>Add Your bank details for getting services from cloud.
+                                
+                            </strong></p>
+                            <a href="{% url 'registration:login' %}" class="btn btn-primary">Login</a>
+
+                        {% endif %}
+                    </div>
+                </center>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+    
+<div class="container-fluid pl-5" id="services" style="float: right;padding-top: 80px;">
+    <div class="row" >
+        <div class="col-9 col-sm-12 col-md-6 col-lg-6 p-2" style="padding-right: 9%;" align="right">
+            <center>
+            <div class="card" style="width: 18rem;" align="right">
+                <center>
+                    <img class="card-img-top p-4" src="{% static 'img/operation.png' %}" width="270px" height="150px" alt="Card image cap">
+                    <div class="card-body">
+                        {% if user.is_authenticated %}
+                        <h5 class="card-title"><b>Services</b></h5>
+                        <p class="card-text"><strong>Online payment services</strong></p>
+                        <a href="{% url 'bankapp:services' %}" class="btn btn-primary">Services</a>
+                        {% else %}
+                        <h5 class="card-title"><b>Bank Details</b></h5>
+                        <p class="card-text"><strong>Online payment services
+                            
+                        </strong></p>
+                        <a href="{% url 'registration:login' %}" class="btn btn-primary">Login</a>
+
+                    {% endif %}
+                       
+                    </div>
+                </center>
+            </div>
+        </center>
+        </div>
+        
+        <div class="col-9 col-sm-12 col-md-6 col-lg-6 p-2">
+            
+                <img src="{% static 'img/service.png' %}" width="270px" height="270px" alt="" class="border-gradient-do border-gradient-purple on-light"  class="gradient-box">
+            
+        </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid" id="transfer" style="padding-top: 80px;">
+        <div class="row p-5">
+            <div class="col-9 col-sm-12 col-md-6 col-lg-6 p-2">
+                <center>
+                    <div class="on-light back">
+                     
+                    <img src="{% static 'img/transfer.png' %}" width="270px" height="270px" alt="" class="border-gradient border-gradient-purple on-light"  class="gradient-box">
+               
+               </div> </center>
+            </div>
+           
+            
+            <div class="col-9 col-sm-12 col-md-6 col-lg-6 p-2">
+               
+                    <div class="card" style="width: 18rem;">
+                        <center>
+                        <img class="card-img-top p-4" src="{% static 'img/money-transaction.png' %}" width="270px" height="150px" alt="Card image cap" >
+                        <div class="card-body">
+                            {% if user.is_authenticated %}
+                            <h5 class="card-title"><b>Transfer</b></h5>
+                            <p class="card-text"><strong>Transfer money to client's bank account</strong> </p>
+                            <a href="{% url 'bankapp:transfer' %}" class="btn btn-primary">Money Transfer</a>
+                            {% else %}
+                            <h5 class="card-title"><b>Transfer</b></h5>
+                            <p class="card-text"><strong>Transfer money to client's bank account
+                                
+                            </strong></p>
+                            <a href="{% url 'registration:login' %}" class="btn btn-primary">Login</a>
+    
+                        {% endif %}
+                        
+                    </center>
+                      </div>
+               
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
